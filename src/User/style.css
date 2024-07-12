@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper .side-bar .navigasi:hover:not(:last-child) {
+    background-color: #D81B24;
+}
+
+.wrapper main .card > *:not(:last-child) {
+    margin-right: 10px;
+}
