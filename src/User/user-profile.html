@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<!DOCTYPE html>
+<body class="w-full h-[100vh]">
+    <div class="wrapper flex w-full">
+        <div class="side-bar w-[15%] bg-primary py-10 px-2 fixed top-0 left-0 h-full">
+            <div class="user-profile flex flex-col items-center w-full mb-8">
+                <img src="../../img/profile.png" alt="profile" class="w-20 h-20 rounded-full mb-3">
+                <h4 class="text-white font-bold text-xl">Luke Skywalker</h4>
+            </div>
+            <div class="navigasi flex items-center p-2 rounded-md mb-2">
+                <img src="../../icon/Home.svg" alt="beranda" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Beranda</a>
+            </div>
+            <div class="navigasi flex items-center p-2 rounded-md mb-2">
+                <img src="../../icon/Event.svg" alt="kegiatan" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Kegiatan</a>
+            </div>
+            <div class="navigasi flex items-center justify-start p-2 rounded-md mb-2">
+                <img src="../../icon/Add.svg" alt="tambah" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Tambah Kegiatan</a>
+            </div>
+            <div class="navigasi flex items-center p-2 rounded-md mb-2">
+                <img src="../../icon/Profile.svg" alt="profile" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Profile</a>
+            </div>
+            <div class="navigasi flex items-center p-2 rounded-md mb-2">
+                <img src="../../icon/Love.svg" alt="favorit" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Kegiatan Favorit</a>
+            </div>
+            <div class="navigasi flex items-center p-2 bg-dark rounded-md mb-2">
+                <img src="../../icon/Out.svg" alt="keluar" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Keluar</a>
+            </div>
+        </div>
+        <main id="user-profile" class="px-20 py-10 w-full  ms-48">
+            <h2 class="font-bold text-2xl mb-10">Profil</h2>
+            <div class="profile-detail w-full border shadow-md p-4 flex gap-8 mb-5 rounded-sm">
+                <div class="profile-picture relative">
+                    <div class="w-40 h-40' rounded-full">
+                        <img src="../../img/profilee.png" alt="profile">
+
+                    </div>
+                    <img src="../../icon/camera.svg" alt="camera" class="absolute bottom-0 right-0">
+                </div>
+                <div class="profile-name relative">
+                    <div class="name flex items-center gap-2 mb-5">
+                        <input type="text" value="Luke Skywalker" class="border-b border-black w-[350px]">
+                        <img src="../../icon/pen.svg" alt="pen" width="20">
+                    </div>
+                    <div class="name flex items-center gap-2">
+                        <input type="email" value="skywalker@gmail.com" class="border-b border-black w-[350px]">
+                        <img src="../../icon/pen.svg" alt="pen" width="20">
+                    </div>
+                    <button
+                        class="font-medium text-lg mt-10 bg-primary text-white px-5 py-1 rounded-lg absolute bottom-0">Ganti
+                        Password</button>
+                </div>
+            </div>
+            <div class="status w-full border shadow-md p-4 flex justify-between items-center rounded-sm mb-10">
+                <p>Akun anda belum terverifikasi untuk membuat kegiatan!</p>
+                <button class="font-medium text-lg bg-primary text-white px-5 py-1 rounded-lg">Verifikasi Akun</button>
+            </div>
+            <h2 class="font-bold text-2xl mb-10">Kegiatan Yang Dibuat</h2>
+            <div class="card flex mb-3">
+                <div class="w-1/4 border shadow-md rounded-md">
+                    <img src="../../img/card9.png" alt="card9">
+                    <div class="card-detail px-3 py-5">
+                        <h4 class="font-bold mb-1">Intergalactic Robotics Competition</h4>
+                        <h5 class="text-sm mb-1">6 Pendaftar</h5>
+                        <h4 class="font-bold mb-1">25 April 2024</h4>
+                        <div class="company flex">
+                            <h4 class="font-bold me-2">Luke Skywalker</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/4 border shadow-md rounded-md">
+                    <img src="../../img/card10.png" alt="card10">
+                    <div class="card-detail px-3 py-5">
+                        <h4 class="font-bold mb-1">Galactic Coding Challenge</h4>
+                        <h5 class="text-sm mb-1">15 Pendaftar</h5>
+                        <h4 class="font-bold mb-1">5 Februari 2024</h4>
+                        <div class="company flex">
+                            <h4 class="font-bold me-2">Luke Skywalker</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/4 border shadow-md rounded-md">
+                    <img src="../../img/card11.png" alt="card11">
+                    <div class="card-detail px-3 py-5">
+                        <h4 class="font-bold mb-1">Star Wars Tech Summit</h4>
+                        <h5 class="text-sm mb-1">10 Pendaftar</h5>
+                        <h4 class="font-bold mb-1">12 Maret 2024</h4>
+                        <div class="company flex">
+                            <h4 class="font-bold me-2">Luke Skywalker</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/4 border shadow-md rounded-md">
+                    <img src="../../img/card12.png" alt="card12">
+                    <div class="card-detail px-3 py-5">
+                        <h4 class="font-bold mb-1">Space Innovation Forum</h4>
+                        <h5 class="text-sm mb-1">0 Pendaftar</h5>
+                        <h4 class="font-bold mb-1">30 Mei 2024</h4>
+                        <div class="company flex">
+                            <h4 class="font-bold me-2">Luke Skywalker</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    </div>
+</body>
+
+</html>

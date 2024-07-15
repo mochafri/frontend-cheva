@@ -9,6 +9,17 @@
     background-color: #D81B24;
 }
 
-.wrapper main .card > *:not(:last-child) {
+.wrapper main .card>*:not(:last-child) {
     margin-right: 10px;
 }
+
+/* Event Detail Page style */
+#event .detail .left {
+    flex: 1;
+}
+
+#event .detail .right {
+    flex: 2;
+    width: 700px;
+}
+

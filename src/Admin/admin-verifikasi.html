@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin verifikasi Page</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        table {
+            border-collapse: c;
+            table-layout: fixed;
+            box-sizing: border-box;
+        }
+
+        table th {
+            font-size: 20px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            /* Default no border */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper flex">
+        <div class="side-bar w-[15%] bg-primary py-10 px-2">
+            <div class="user-profile flex flex-col items-center w-full mb-8">
+                <img src="../../img/profile.png" alt="profile" class="w-20 h-20 rounded-full mb-3">
+                <h4 class="text-white font-bold text-xl">Admin</h4>
+            </div>
+            <div class="navigasi flex items-center p-2 rounded-md mb-2">
+                <img src="../../icon/verif2.svg" alt="verifikasi" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Verifikasi</a>
+            </div>
+            <div class="navigasi flex items-center p-2 rounded-md mb-2">
+                <img src="../../icon/kelola.svg" alt="pengelolaan" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Pengelolaan</a>
+            </div>
+            <div class="navigasi flex items-center p-2 bg-dark rounded-md mb-2">
+                <img src="../../icon/Out.svg" alt="keluar" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Keluar</a>
+            </div>
+        </div>
+        <main id="home" class="px-20 py-10 w-full">
+            <h2 class="font-bold text-2xl mb-10">Verifikasi Akun</h2>
+            <div class="flex items-center space-x-2 mb-10">
+                <!-- Search Input -->
+                <div class="relative">
+                    <input type="text" placeholder="Pencarian..."
+                        class="border border-gray-300 rounded-lg pl-10 pr-4 py-2 focus:ring focus:ring-red-500 focus:border-red-500 outline-none w-96">
+                    <svg class="w-5 h-5 absolute left-3 top-2.5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M12.9 14.32a8 8 0 111.414-1.414l4.243 4.243-1.414 1.414-4.243-4.243zM14 8a6 6 0 11-12 0 6 6 0 0112 0z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </div>
+            <table class="w-full">
+                <tr class="mb-10">
+                    <th>Profil</th>
+                    <th>Tanggal Meminta</th>
+                    <th>Username</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr class="shadow-md border">
+                    <td>
+                        <div class="flex justify-center rounded-full">
+                            <img src="../../img/profile.png" alt="profile" width="40">
+                        </div>
+                    </td>
+                    <td class="font-medium">2024-07-05</td>
+                    <td class="font-medium">Luke Skywalker</td>
+                    <td class="font-medium">Meminta</td>
+                    <td class="flex justify-center gap-5">
+                        <div class="file bg-primary p-1 rounded-md">
+                            <img src="../../icon/File.svg" alt="file">
+                        </div>
+                        <div class="check bg-[#0FC30B] p-1 rounded-md">
+                            <img src="../../icon/Check.svg" alt="check">
+                        </div>
+                        <div class="cancel bg-[#ED1E28] p-1 rounded-md">
+                            <img src="../../icon/Cancel.svg" alt="cancel">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr class="shadow-md border">
+                    <td>
+                        <div class="flex justify-center rounded-full">
+                            <img src="../../img/profile2.png" alt="profile2" width="40">
+                        </div>
+                    </td>
+                    <td class="font-medium">2024-07-05</td>
+                    <td class="font-medium">Brimstone</td>
+                    <td class="font-medium">Meminta</td>
+                    <td class="flex justify-center gap-5">
+                        <div class="file bg-primary p-1 rounded-md">
+                            <img src="../../icon/File.svg" alt="file">
+                        </div>
+                        <div class="check bg-[#0FC30B] p-1 rounded-md">
+                            <img src="../../icon/Check.svg" alt="check">
+                        </div>
+                        <div class="cancel bg-[#ED1E28] p-1 rounded-md">
+                            <img src="../../icon/Cancel.svg" alt="cancel">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr class="shadow-md border">
+                    <td>
+                        <div class="flex justify-center rounded-full">
+                            <img src="../../img/profile3.png" alt="profile3.png" width="40">
+                        </div>
+                    </td>
+                    <td class="font-medium">2024-07-05</td>
+                    <td class="font-medium">Cristiano Ronaldo</td>
+                    <td class="font-medium">Meminta</td>
+                    <td class="flex justify-center gap-5">
+                        <div class="file bg-primary p-1 rounded-md">
+                            <img src="../../icon/File.svg" alt="file">
+                        </div>
+                        <div class="check bg-[#0FC30B] p-1 rounded-md">
+                            <img src="../../icon/Check.svg" alt="check">
+                        </div>
+                        <div class="cancel bg-[#ED1E28] p-1 rounded-md">
+                            <img src="../../icon/Cancel.svg" alt="cancel">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr class="shadow-md border">
+                    <td>
+                        <div class="flex justify-center rounded-full">
+                            <img src="../../img/profile4.png" alt="profile4.png" width="40">
+                        </div>
+                    </td>
+                    <td class="font-medium">2024-07-06</td>
+                    <td class="font-medium">Judge Bellingham</td>
+                    <td class="font-medium">Meminta</td>
+                    <td class="flex justify-center gap-5">
+                        <div class="file bg-primary p-1 rounded-md cursor-pointer">
+                            <img src="../../icon/File.svg" alt="file">
+                        </div>
+                        <div class="check bg-[#0FC30B] p-1 rounded-md cursor-pointer">
+                            <img src="../../icon/Check.svg" alt="check">
+                        </div>
+                        <div class="cancel bg-[#ED1E28] p-1 rounded-md cursor-pointer">
+                            <img src="../../icon/Cancel.svg" alt="cancel">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </main>
+    </div>
+</body>
+
+</html>

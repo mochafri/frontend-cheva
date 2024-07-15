@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Event</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="w-full h-[100vh]">
+    <div class="wrapper flex w-full">
+        <div class="side-bar w-[15%] bg-primary py-10 px-2 fixed top-0 left-0 h-full">
+            <div class="user-profile flex flex-col items-center w-full mb-8">
+                <img src="../../img/profile.png" alt="profile" class="w-20 h-20 rounded-full mb-3">
+                <h4 class="text-white font-bold text-xl">Luke Skywalker</h4>
+            </div>
+            <div class="navigasi flex items-center p-2 rounded-md mb-2">
+                <img src="../../icon/Home.svg" alt="beranda" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Beranda</a>
+            </div>
+            <div class="navigasi flex items-center p-2 rounded-md mb-2">
+                <img src="../../icon/Event.svg" alt="kegiatan" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Kegiatan</a>
+            </div>
+            <div class="navigasi flex items-center justify-start p-2 rounded-md mb-2">
+                <img src="../../icon/Add.svg" alt="tambah" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Tambah Kegiatan</a>
+            </div>
+            <div class="navigasi flex items-center p-2 rounded-md mb-2">
+                <img src="../../icon/Profile.svg" alt="profile" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Profile</a>
+            </div>
+            <div class="navigasi flex items-center p-2 rounded-md mb-2">
+                <img src="../../icon/Love.svg" alt="favorit" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Kegiatan Favorit</a>
+            </div>
+            <div class="navigasi flex items-center p-2 bg-dark rounded-md mb-2">
+                <img src="../../icon/Out.svg" alt="keluar" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Keluar</a>
+            </div>
+        </div>
+        <main id="home" class="px-20 py-10 w-full ms-48">
+            <h2 class="font-bold text-2xl mb-10">Tambah Kegiatan</h2>
+            <div class="add-event flex gap-5">
+                <form class="left flex-1">
+                    <label for="kegiatan" class="font-bold">Nama Kegiatan</label>
+                    <input type="text" id="kegiatan" name="kegiatan"
+                        class="mt-2 border border-black w-full px-2 py-[5px] rounded-md text-sm mb-3"
+                        placeholder="Nama...">
+                    <label for="kegiatan" class="font-bold">Deskripsi Kegiatan</label>
+                    <textarea name="deskripsi" id="deskripsi"
+                        class="w-full h-[200px] border border-black rounded-md px-2 py-[5px] text-sm mt-2 mb-3"
+                        placeholder="Deskripsi..."></textarea>
+                    <label for="kegiatan" class="font-bold">Kategori Kegiatan</label>
+                    <div class="categories flex w-3/4 gap-9 mt-3 mb-3">
+                        <div class="left">
+                            <div class="kategori flex items-center mb-2">
+                                <input type="checkbox" class="me-2 transform scale-150"><span>Konser</span>
+                            </div>
+                            <div class="kategori flex items-center mb-2">
+                                <input type="checkbox" class="me-2 transform scale-150"><span>Seminar</span>
+                            </div>
+                            <div class="kategori flex items-center mb-2">
+                                <input type="checkbox" class="me-2 transform scale-150"><span>Talkshow</span>
+                            </div>
+                            <div class="kategori flex items-center mb-2">
+                                <input type="checkbox" class="me-2 transform scale-150"><span>Festival</span>
+                            </div>
+                        </div>
+                        <div class="center">
+                            <div class="kategori flex items-center mb-2">
+                                <input type="checkbox" class="me-2 transform scale-150"><span>Bazar</span>
+                            </div>
+                            <div class="kategori flex items-center mb-2">
+                                <input type="checkbox" class="me-2 transform scale-150"><span>Workshop</span>
+                            </div>
+                            <div class="kategori flex items-center mb-2">
+                                <input type="checkbox" class="me-2 transform scale-150"><span>Lomba</span>
+                            </div>
+                            <div class="kategori flex items-center mb-2">
+                                <input type="checkbox" class="me-2 transform scale-150"><span>Pameran</span>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="kategori flex items-center mb-2">
+                                <input type="checkbox" class="me-2 transform scale-150"><span>Wisuda</span>
+                            </div>
+                            <div class="kategori flex items-center mb-2">
+                                <input type="checkbox" class="me-2 transform scale-150"><span>PKKMB</span>
+                            </div>
+                            <div class="kategori flex items-center mb-2">
+                                <input type="checkbox" class="me-2 transform scale-150"><span>Kuliah Umum</span>
+                            </div>
+                            <div class="kategori flex items-center mb-2">
+                                <input type="checkbox" class="me-2 transform scale-150"><span>Kegiatan Sosial</span>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="kegiatan" class="font-bold">Unggah Poster</label>
+                    <p class="text-[12px] mb-3">Untuk mendapatkan gambar yang optimal, gunakan ukuran ratio 4:5 atau
+                        1080px x 1350px</p>
+                    <div class="flex flex-col">
+                        <button
+                            class="bg-primary text-white px-10 font-medium rounded-md me-10 py-2 w-[250px] mb-20">Unggah
+                            Poster</button>
+                        <button class="bg-primary text-white px-10 font-medium rounded-md me-10 py-2 w-[250px]">Tambah
+                            Kegiatan</button>
+                    </div>
+                </form>
+                <form class="right flex-1">
+                    <label for="tgl-mulai" class="font-bold">Tanggal Mulai</label>
+                    <input type="date" id="tgl-mulai" name="tgl-mulai"
+                        class="mt-2 border border-black w-full px-2 py-[5px] rounded-md text-sm mb-3">
+                    <label for="tgl-selesai" class="font-bold">Tanggal Selesai</label>
+                    <input type="date" id="tgl-selesai" name="tgl-selesai"
+                        class="mt-2 border border-black w-full px-2 py-[5px] rounded-md text-sm mb-3">
+                    <label for="wkt-mulai" class="font-bold">Waktu Mulai</label>
+                    <input type="time" id="wkt-mulai" name="wkt-mulai"
+                        class="mt-2 border border-black w-full px-2 py-[5px] rounded-md text-sm mb-3">
+                    <label for="wkt-selesai" class="font-bold">Waktu Selesai</label>
+                    <input type="time" id="wkt-selesai" name="wkt-selesai"
+                        class="mt-2 border border-black w-full px-2 py-[5px] rounded-md text-sm mb-3">
+                    <label for="lokasi" class="font-bold">Lokasi</label>
+                    <input type="text" id="lokasi" name="lokasi"
+                        class="mt-2 border border-black w-full px-2 py-[5px] rounded-md text-sm mb-3"
+                        placeholder="Masukkan alamat kegiatan">
+                    <label for="narahubung" class="font-bold">Narahubung</label>
+                    <input type="text" id="narahubung" name="narahubung"
+                        class="mt-2 border border-black w-full px-2 py-[5px] rounded-md text-sm mb-3"
+                        placeholder="WA, IG, Telegram, Line...">
+                    <label for="link-daftar" class="font-bold">Link Pendaftaran</label>
+                    <input type="text" id="link-daftar" name="link-daftar"
+                        class="mt-2 border border-black w-full px-2 py-[5px] rounded-md text-sm mb-3"
+                        placeholder="Link pendaftaran kegiatan...">
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

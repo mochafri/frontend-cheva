@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Detail</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="w-full h-[100vh]">
+    <div class="wrapper flex w-full">
+        <div class="side-bar w-[15%] bg-primary py-10 px-2 fixed top-0 left-0 h-full">
+            <div class="user-profile flex flex-col items-center w-full mb-8">
+                <img src="../../img/profile.png" alt="profile" class="w-20 h-20 rounded-full mb-3">
+                <h4 class="text-white font-bold text-xl">Luke Skywalker</h4>
+            </div>
+            <div class="navigasi flex items-center p-2 rounded-md mb-2">
+                <img src="../../icon/Home.svg" alt="beranda" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Beranda</a>
+            </div>
+            <div class="navigasi flex items-center p-2 rounded-md mb-2">
+                <img src="../../icon/Event.svg" alt="kegiatan" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Kegiatan</a>
+            </div>
+            <div class="navigasi flex items-center justify-start p-2 rounded-md mb-2">
+                <img src="../../icon/Add.svg" alt="tambah" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Tambah Kegiatan</a>
+            </div>
+            <div class="navigasi flex items-center p-2 rounded-md mb-2">
+                <img src="../../icon/Profile.svg" alt="profile" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Profile</a>
+            </div>
+            <div class="navigasi flex items-center p-2 rounded-md mb-2">
+                <img src="../../icon/Love.svg" alt="favorit" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Kegiatan Favorit</a>
+            </div>
+            <div class="navigasi flex items-center p-2 bg-dark rounded-md mb-2">
+                <img src="../../icon/Out.svg" alt="keluar" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Keluar</a>
+            </div>
+        </div>
+        <main id="event" class="px-20 py-10 ms-48">
+            <div class="judul flex items-center mb-5">
+                <img src="../../icon/Back.svg" alt="Back" width="30" class="me-2">
+                <h2 class="font-bold text-2xl">Detail Kegiatan</h2>
+            </div>
+            <div class="detail flex">
+                <div class="left me-5">
+                    <img src="../../img/card1.png" alt="event1">
+                </div>
+                <div class="right">
+                    <h2 class="font-bold text-2xl mb-3">Festival Summer Park</h2>
+                    <p class="mb-3">Festival terbesar yang dibuat untuk mahasiswa FIF selama ujian akhir semester
+                        berlangsung. Acara
+                        ini mencakup berbagai kegiatan hiburan seperti stand makanan, konser musik, dan pameran seni.
+                        Festival ini bertujuan untuk memberikan kesempatan bagi mahasiswa untuk bersantai dan menikmati
+                        waktu bersama teman-teman setelah menghadapi tekanan ujian. Selain itu, festival ini juga
+                        menjadi ajang untuk menampilkan kreativitas dan bakat-bakat terpendam dari mahasiswa melalui
+                        berbagai pertunjukan dan kegiatan interaktif.</p>
+                    <div class="mb-2">
+                        <strong class="inline-block w-[200px]">Kategori :</strong>
+                        <span>Festival</span>
+                    </div>
+                    <div class="mb-2">
+                        <strong class="inline-block w-[200px]">Tanggal Mulai :</strong>
+                        <span>8 Juni 2024</span>
+                    </div>
+                    <div class="mb-2">
+                        <strong class="inline-block w-[200px]">Tanggal Selesai :</strong>
+                        <span>9 Juni 2024</span>
+                    </div>
+                    <div class="mb-2">
+                        <strong class="inline-block w-[200px]">Waktu Mulai :</strong>
+                        <span>10.00 WIB</span>
+                    </div>
+                    <div class="mb-2">
+                        <strong class="inline-block w-[200px]">Waktu Selesai :</strong>
+                        <span>19.00 WIB</span>
+                    </div>
+                    <div class="mb-2">
+                        <strong class="inline-block w-[200px]">Lokasi :</strong>
+                        <span>GSG, Telkom University</span>
+                    </div>
+                    <div class="mb-2">
+                        <strong class="inline-block w-[200px]">Narahubung :</strong>
+                        <span>@himi_informatikans (Instagram)</span>
+                    </div>
+                    <div class="mb-2">
+                        <strong class="inline-block w-[200px]">Jumlah Pendaftar :</strong>
+                        <span>1000 Pendaftar</span>
+                    </div>
+                    <div class="mb-7 flex">
+                        <strong class="inline-block w-[200px]">Penyelenggara :</strong>
+                        <div class="flex">
+                            <span class="me-2">HIMI Informaticans</span>
+                            <img src="../../icon/Verif.svg" alt="verif">
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <button class="bg-primary text-white px-10 font-medium rounded-md me-10">Daftar</button>
+                        <img src="../../icon/love-2.svg" alt="love">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

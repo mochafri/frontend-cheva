@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelola Akun Page</title>
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        table {
+            border-collapse: collapse;
+            table-layout: fixed;
+            box-sizing: border-box;
+            border: 1px solid rgb(168, 21, 28);
+
+        }
+
+        table th {
+            font-size: 20px;
+            border: 1px solid rgb(168, 21, 28);
+            border-left: none;
+            border-right: none;
+            background-color: rgb(168, 21, 28);
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            border: 1px solid rgb(168, 21, 28);
+            /* Default no border */
+        }
+
+        th:first-child,
+        td:first-child {
+            width: 5%;
+        }
+
+        th,
+        td {
+            border-left: none;
+            border-right: none;
+        }
+
+        td:last-child {
+            border-bottom: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper flex">
+        <div class="side-bar w-[15%] bg-primary py-10 px-2">
+            <div class="user-profile flex flex-col items-center w-full mb-8">
+                <img src="../../img/profile.png" alt="profile" class="w-20 h-20 rounded-full mb-3">
+                <h4 class="text-white font-bold text-xl">Admin</h4>
+            </div>
+            <div class="navigasi flex items-center p-2 rounded-md mb-2">
+                <img src="../../icon/verif2.svg" alt="verifikasi" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Verifikasi</a>
+            </div>
+            <div class="navigasi flex items-center p-2 rounded-md mb-2">
+                <img src="../../icon/kelola.svg" alt="pengelolaan" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Pengelolaan</a>
+            </div>
+            <div class="navigasi flex items-center p-2 bg-dark rounded-md mb-2">
+                <img src="../../icon/Out.svg" alt="keluar" class="me-2">
+                <a href="#" class="text-white font-bold text-xl">Keluar</a>
+            </div>
+        </div>
+        <main id="home" class="px-20 py-10 w-full">
+            <h2 class="font-bold text-2xl mb-10">Pengelolaan Akun</h2>
+            <div class="flex items-center space-x-2 mb-5">
+                <!-- Search Input -->
+                <div class="relative">
+                    <input type="text" placeholder="Pencarian..."
+                        class="border border-gray-300 rounded-lg pl-10 pr-4 py-2 focus:ring focus:ring-red-500 focus:border-red-500 outline-none w-96">
+                    <svg class="w-5 h-5 absolute left-3 top-2.5 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M12.9 14.32a8 8 0 111.414-1.414l4.243 4.243-1.414 1.414-4.243-4.243zM14 8a6 6 0 11-12 0 6 6 0 0112 0z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </div>
+            <div class="filter flex mb-10">
+                <!-- Buttons -->
+                <div
+                    class=" bg-red-700 text-white px-3 py-1 rounded-lg focus:outline-none me-5 flex justify-between gap-2">
+                    <button>Terverifikasi</button>
+                    <img src="../../icon/filter.svg" alt="filter">
+                </div>
+                <div
+                    class=" bg-red-700 text-white px-3 py-1 rounded-lg focus:outline-none me-5 flex justify-between gap-2">
+                    <button>Terakhir Dibuat</button>
+                    <img src="../../icon/filter.svg" alt="filter">
+                </div>
+            </div>
+            <table class="w-full">
+                <tr class="mb-10">
+                    <th>No</th>
+                    <th>Username</th>
+                    <th>Tanggal Daftar</th>
+                    <th>Status</th>
+                    <th>Total Kegiatan</th>
+                    <th>Aksi</th>
+                </tr>
+                <tr>
+                    <td class="font-medium">1</td>
+                    <td class="font-medium">Luke Skywalker</td>
+                    <td class="font-medium">2024-07-05</td>
+                    <td class="font-medium">Terverifikasi</td>
+                    <td class="font-medium">3</td>
+                    <td class="flex justify-center gap-5 border-none">
+                        <div class="file bg-primary p-1 rounded-md ">
+                            <img src="../../icon/File.svg" alt="file">
+                        </div>
+                        <div class="file bg-primary p-1 rounded-md cursor-pointer ">
+                            <img src="../../icon/More.svg" alt="more">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="font-medium">2</td>
+                    <td class="font-medium">Max Verstappen</td>
+                    <td class="font-medium">2024-07-03</td>
+                    <td class="font-medium">Tidak Terverifikasi</td>
+                    <td class="font-medium">2</td>
+                    <td class="flex justify-center gap-5 ">
+                        <div class="file bg-primary p-1 rounded-md">
+                            <img src="../../icon/File.svg" alt="file">
+                        </div>
+                        <div class="file bg-primary p-1 rounded-md cursor-pointer ">
+                            <img src="../../icon/More.svg" alt="more">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="font-medium">3</td>
+                    <td class="font-medium">Darth Vader</td>
+                    <td class="font-medium">2024-07-01</td>
+                    <td class="font-medium">Terverifikasi</td>
+                    <td class="font-medium">15</td>
+                    <td class="flex justify-center gap-5">
+                        <div class="file bg-primary p-1 rounded-md">
+                            <img src="../../icon/File.svg" alt="file">
+                        </div>
+                        <div class="file bg-primary p-1 rounded-md cursor-pointer ">
+                            <img src="../../icon/More.svg" alt="more">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="font-medium">4</td>
+                    <td class="font-medium">HIMA Teknik Industri</td>
+                    <td class="font-medium">2024-07-11</td>
+                    <td class="font-medium">Terverifikasi</td>
+                    <td class="font-medium">9</td>
+                    <td class="flex justify-center gap-5 ">
+                        <div class="file bg-primary p-1 rounded-md cursor-pointer ">
+                            <img src="../../icon/File.svg" alt="file">
+                        </div>
+                        <div class="file bg-primary p-1 rounded-md cursor-pointer ">
+                            <img src="../../icon/More.svg" alt="more">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="font-medium">5</td>
+                    <td class="font-medium">Fernando Alonso</td>
+                    <td class="font-medium">2024-07-12</td>
+                    <td class="font-medium">Tidak Terverifikasi</td>
+                    <td class="font-medium">5</td>
+                    <td class="flex justify-center gap-5 ">
+                        <div class="file bg-primary p-1 rounded-md cursor-pointer ">
+                            <img src="../../icon/File.svg" alt="file">
+                        </div>
+                        <div class="file bg-primary p-1 rounded-md cursor-pointer ">
+                            <img src="../../icon/More.svg" alt="more">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="font-medium">6</td>
+                    <td class="font-medium">HIMA Teknik Elektro</td>
+                    <td class="font-medium">2024-07-08</td>
+                    <td class="font-medium">Terverifikasi</td>
+                    <td class="font-medium">8</td>
+                    <td class="flex justify-center gap-5 ">
+                        <div class="file bg-primary p-1 rounded-md cursor-pointer ">
+                            <img src="../../icon/File.svg" alt="file">
+                        </div>
+                        <div class="file bg-primary p-1 rounded-md cursor-pointer ">
+                            <img src="../../icon/More.svg" alt="more">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </main>
+    </div>
+</body>
+
+</html>
